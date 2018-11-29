@@ -1,6 +1,7 @@
 package com.joofont.springboot.service;
 
 import com.joofont.springboot.entity.Book;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -12,5 +13,6 @@ public interface BookService {
 
     Book getById(Integer id);
 
+    @Transactional
     List<Book> getAllBooks();
 }
