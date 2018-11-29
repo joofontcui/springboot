@@ -1,0 +1,1 @@
+ALTER TABLE test_add_table MODIFY COLUMN amount int(10) DEFAULT NULL COMMENT '推荐人数'
