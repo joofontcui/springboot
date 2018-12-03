@@ -115,10 +115,17 @@
 			<artifactId>spring-boot-starter-velocity</artifactId>
 		</dependency>
 
+		<!--支撑邮件模板的依赖-->
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
 			<version>1.6.4</version>
+		</dependency>
+
+		<!--RabbitMQ-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 	</dependencies>
 
