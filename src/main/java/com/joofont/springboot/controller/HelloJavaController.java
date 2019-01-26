@@ -5,6 +5,7 @@ import com.joofont.springboot.exception.MyException;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
@@ -20,8 +21,8 @@ public class HelloJavaController {
     @ApiOperation(value="创建用户", notes="根据User对象创建用户")
 //    @ApiImplicitParam(name = "user", value = "用户详细实体user", required = true, dataType = "User")
     @GetMapping("/java")
-    public String helloJava() {
-        return "Hello World";
+    public String helloJava(@RequestParam Long id) {
+        return "Hello World id = " + id;
     }
 
     @GetMapping("/json")
